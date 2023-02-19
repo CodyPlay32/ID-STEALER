@@ -1,0 +1,86 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/INTERFAZ-V5/main/UI')))()
+local Window = OrionLib:MakeWindow({IntroText = "CodyPlay32 GUI V5",Name = "MENÚ - V5", HidePremium = false})
+local CF = CFrame.new
+
+
+local PlayerTab = Window:MakeTab({
+	Name = "PLAYER",
+	Icon = "rbxassetid://7743875962",
+	PremiumOnly = false
+})
+
+local GameTab = Window:MakeTab({
+	Name = "GAMES",
+	Icon = "rbxassetid://7733746980",
+	PremiumOnly = false
+})
+
+local ScriptsTab = Window:MakeTab({
+	Name = "SCRIPTS",
+	Icon = "rbxassetid://7733920644",
+	PremiumOnly = false
+})
+
+local CreditsTab = Window:MakeTab({
+	Name = "CREDITOS",
+	Icon = "rbxassetid://7743876142",
+	PremiumOnly = false
+})
+
+local BookChams = {}
+PlayerTab:AddButton({
+	Name = "ANTI-AFK",
+	Callback = function()
+	    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+    v:Disable()
+end
+  	end 
+})
+
+local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+  	end 
+})
+
+local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "ID-STEALER",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER", true))()
+  	end 
+})
+
+local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "INFINITY-YIELD",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end 
+})
+
+local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "STEALING-GAME",
+	Callback = function()
+	    saveinstance()
+  	end 
+})
+
+local BookChams = {}
+PlayerTab:AddButton({
+	Name = "SERPIENTE",
+	Callback = function()
+	    loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
+  	end 
+})
+
+CreditsTab:AddParagraph("DEVELOPER","Menú - V5 Creado Por CodyPlay32")
+
+coroutine.resume(NotificationCoroutine)
+
+OrionLib:Init()
+
+task.wait(2)
