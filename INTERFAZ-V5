@@ -77,6 +77,14 @@ PlayerTab:AddButton({
   	end 
 })
 
+local BookChams = {}
+GameTab:AddButton({
+	Name = "STARVING-ARTISTS",
+	Callback = function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end 
+})
+
 CreditsTab:AddParagraph("DEVELOPER","Menú - V5 Creado Por CodyPlay32")
 
 coroutine.resume(NotificationCoroutine)
