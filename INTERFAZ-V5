@@ -86,6 +86,14 @@ ScriptsTab:AddButton({
 })
 
 local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "SERVER-SVIP",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP"))()
+  	end 
+})
+
+local BookChams = {}
 PlayerTab:AddButton({
 	Name = "SERPIENTE",
 	Callback = function()
