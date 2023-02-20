@@ -93,6 +93,14 @@ GameTab:AddButton({
   	end 
 })
 
+local BookChams = {}
+GameTab:AddButton({
+	Name = "BUILD A BOAT",
+	Callback = function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Crimson-gith/BuildABoat/main/Build%20A%20Boat'), true))()
+  	end 
+})
+
 CreditsTab:AddParagraph("DEVELOPER","Menú - V5 Creado Por CodyPlay32")
 
 coroutine.resume(NotificationCoroutine)
