@@ -70,6 +70,14 @@ ScriptsTab:AddButton({
 })
 
 local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "ANÓNIMO-NAME",
+	Callback = function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO'),true))()
+  	end 
+})
+
+local BookChams = {}
 PlayerTab:AddButton({
 	Name = "SERPIENTE",
 	Callback = function()
