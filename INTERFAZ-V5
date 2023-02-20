@@ -78,6 +78,14 @@ ScriptsTab:AddButton({
 })
 
 local BookChams = {}
+ScriptsTab:AddButton({
+	Name = "STREAM-SNIPER",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+  	end 
+})
+
+local BookChams = {}
 PlayerTab:AddButton({
 	Name = "SERPIENTE",
 	Callback = function()
