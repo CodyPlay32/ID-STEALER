@@ -89,7 +89,7 @@ local BookChams = {}
 GameTab:AddButton({
 	Name = "ARSENAL",
 	Callback = function()
-	    loadstring(game:HttpGet('https://pastebin.com/raw/HTSX3ryk', true))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
   	end 
 })
 
