@@ -105,7 +105,7 @@ local BookChams = {}
 GameTab:AddButton({
 	Name = "STARVING-ARTISTS",
 	Callback = function()
-	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jeux45/Starving-Artist-script/main/Script", true))()
   	end 
 })
 
