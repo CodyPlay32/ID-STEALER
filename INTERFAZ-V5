@@ -49,7 +49,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Audio Stealer",
 	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER", true))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER?token=GHSAT0AAAAAAB67UNYIXIB4ZGHLANRHNPSAY7ZGXAA", true))()
   	end 
 })
 
@@ -73,7 +73,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Anónimo Name",
 	Callback = function()
-	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO'),true))()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO?token=GHSAT0AAAAAAB67UNYIMQS7QBXQEV4UYXTMY7ZGWKA'),true))()
   	end 
 })
 
@@ -89,7 +89,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Server Svip",
 	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP"))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP?token=GHSAT0AAAAAAB67UNYITA2NTZZSI6PHRHKOY7ZGX4Q"))()
   	end 
 })
 
@@ -113,7 +113,7 @@ local BookChams = {}
 PlayerTab:AddButton({
 	Name = "Invisible",
 	Callback = function()
-	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/INVISIBLE'),true))()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/INVISIBLE?token=GHSAT0AAAAAAB67UNYJGB6CTVD5MXTD2AGUY7ZGXPQ'),true))()
   	end 
 })
 
