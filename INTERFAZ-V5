@@ -4,32 +4,32 @@ local CF = CFrame.new
 
 
 local PlayerTab = Window:MakeTab({
-	Name = "PLAYER",
+	Name = "Player",
 	Icon = "rbxassetid://7743875962",
 	PremiumOnly = false
 })
 
 local GameTab = Window:MakeTab({
-	Name = "GAMES",
+	Name = "Games",
 	Icon = "rbxassetid://7733746980",
 	PremiumOnly = false
 })
 
 local ScriptsTab = Window:MakeTab({
-	Name = "SCRIPTS",
+	Name = "Scripts",
 	Icon = "rbxassetid://7733920644",
 	PremiumOnly = false
 })
 
 local CreditsTab = Window:MakeTab({
-	Name = "CREDITOS",
+	Name = "Creditos",
 	Icon = "rbxassetid://7743876142",
 	PremiumOnly = false
 })
 
 local BookChams = {}
 PlayerTab:AddButton({
-	Name = "ANTI-AFK",
+	Name = "Anti AFK",
 	Callback = function()
 	    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
     v:Disable()
@@ -47,7 +47,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "ID-STEALER",
+	Name = "Audio Stealer",
 	Callback = function()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER", true))()
   	end 
@@ -55,7 +55,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "INFINITY-YIELD",
+	Name = "Infinity Yield",
 	Callback = function()
 	    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end 
@@ -63,7 +63,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "STEALING-GAME",
+	Name = "Stealing Game",
 	Callback = function()
 	    saveinstance()
   	end 
@@ -71,7 +71,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "ANÓNIMO-NAME",
+	Name = "Anónimo Name",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO'),true))()
   	end 
@@ -79,7 +79,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "STREAM-SNIPER",
+	Name = "Stream Sniper",
 	Callback = function()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
   	end 
@@ -87,7 +87,7 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
-	Name = "SERVER-SVIP",
+	Name = "Server Svip",
 	Callback = function()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP"))()
   	end 
@@ -103,23 +103,23 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 PlayerTab:AddButton({
-	Name = "SERPIENTE",
+	Name = "Serpiente",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
   	end 
 })
 
 local BookChams = {}
-GameTab:AddButton({
-	Name = "STARVING-ARTISTS",
+PlayerTab:AddButton({
+	Name = "Invisible",
 	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jeux45/Starving-Artist-script/main/Script", true))()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/INVISIBLE'),true))()
   	end 
 })
 
 local BookChams = {}
 GameTab:AddButton({
-	Name = "ARSENAL",
+	Name = "Arsenal",
 	Callback = function()
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
   	end 
@@ -127,7 +127,7 @@ GameTab:AddButton({
 
 local BookChams = {}
 GameTab:AddButton({
-	Name = "BUILD A BOAT",
+	Name = "Build a Boat",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Crimson-gith/BuildABoat/main/Build%20A%20Boat'), true))()
   	end 
