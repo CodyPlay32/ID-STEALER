@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
-local Window = OrionLib:MakeWindow({IntroText = "CodyPlay32 GUI V5",Name = "MENÚ - V5", HidePremium = false})
+local Window = OrionLib:MakeWindow({IntroText = "CodyPlay32 - V5",Name = "MENÚ - V5", HidePremium = false})
 local CF = CFrame.new
 
 
