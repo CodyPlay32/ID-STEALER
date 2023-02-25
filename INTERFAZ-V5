@@ -110,14 +110,6 @@ PlayerTab:AddButton({
 })
 
 local BookChams = {}
-PlayerTab:AddButton({
-	Name = "Invisible",
-	Callback = function()
-	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/INVISIBLE?token=GHSAT0AAAAAAB67UNYJGB6CTVD5MXTD2AGUY7ZGXPQ'),true))()
-  	end 
-})
-
-local BookChams = {}
 GameTab:AddButton({
 	Name = "Arsenal",
 	Callback = function()
