@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5?token=GHSAT0AAAAAAB67UNYIZ7R3XG5DLHEWUVX2Y7ZGVOA')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
 local Window = OrionLib:MakeWindow({IntroText = "CodyPlay32 - V5",Name = "MENÚ - V5", HidePremium = false})
 local CF = CFrame.new
 
@@ -49,7 +49,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Audio Stealer",
 	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER?token=GHSAT0AAAAAAB67UNYIXIB4ZGHLANRHNPSAY7ZGXAA", true))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER", true))()
   	end 
 })
 
@@ -73,7 +73,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Anónimo Name",
 	Callback = function()
-	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO?token=GHSAT0AAAAAAB67UNYIMQS7QBXQEV4UYXTMY7ZGWKA'),true))()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO'),true))()
   	end 
 })
 
@@ -89,7 +89,7 @@ local BookChams = {}
 ScriptsTab:AddButton({
 	Name = "Server Svip",
 	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP?token=GHSAT0AAAAAAB67UNYITA2NTZZSI6PHRHKOY7ZGX4Q"))()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP"))()
   	end 
 })
 
