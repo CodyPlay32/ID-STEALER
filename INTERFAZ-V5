@@ -63,6 +63,14 @@ ScriptsTab:AddButton({
 
 local BookChams = {}
 ScriptsTab:AddButton({
+	Name = "Spy",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SPY'))()
+  	end 
+})
+
+local BookChams = {}
+ScriptsTab:AddButton({
 	Name = "Stealing Game",
 	Callback = function()
 	    saveinstance()
