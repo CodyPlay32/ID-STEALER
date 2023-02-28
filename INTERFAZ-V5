@@ -127,14 +127,6 @@ PlayerTab:AddButton({
 
 local BookChams = {}
 GameTab:AddButton({
-	Name = "Arsenal",
-	Callback = function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
-  	end 
-})
-
-local BookChams = {}
-GameTab:AddButton({
 	Name = "Build a Boat",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Crimson-gith/BuildABoat/main/Build%20A%20Boat'), true))()
