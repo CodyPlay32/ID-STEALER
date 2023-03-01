@@ -4,8 +4,6 @@ local win = DiscordLib:Window("discord library")
 
 win:Password("Enter password", function(password)
   if password == "1234" then
-    local serv = win:Server("Preview", "")
-    -- Agrega canales y elementos de la interfaz de usuario aquí
   else
     DiscordLib:Notification("Error", "Incorrect password", "Close")
   end
