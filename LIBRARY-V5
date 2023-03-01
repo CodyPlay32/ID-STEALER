@@ -1,0 +1,319 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "🔒 SISTEMA DE LOGUEO - V5 🔒", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+
+OrionLib:MakeNotification({
+	Name = "Notificación!",
+	Content = "Has sido logueado como "..Player.Name..".",
+	Image = "rbxassetid://7733666258",
+	Time = 5
+})
+
+function Destroy()
+    game:GetService("CoreGui").Orion:Destroy()
+end
+
+_G.Key = "LibraryScriptsCody"
+
+function MakeScriptHub()
+    Destroy()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
+    local Window = OrionLib:MakeWindow({IntroText = "Library - V5", Name = "LIBRARY - V5", HidePremium = false, SaveConfig = true, ConfigFolder = "LibraryScriptsV5", IntroIcon = "rbxassetid://7733666258"})
+
+    OrionLib:MakeNotification({
+        Name = "Notificación",
+        Content = "Menú cargado con éxito, disfruta! ⚡",
+        Image = "rbxassetid://7733666258",
+        Time = 5
+    })
+
+    local PlayerTab = Window:MakeTab({
+        Name = "Jugador",
+        Icon = "rbxassetid://7743875962",
+        PremiumOnly = false
+    })
+    
+    local GameTab = Window:MakeTab({
+        Name = "Juegos",
+        Icon = "rbxassetid://7733746980",
+        PremiumOnly = false
+    })
+    
+    local ScriptsTab = Window:MakeTab({
+        Name = "Scripts",
+        Icon = "rbxassetid://7733920644",
+        PremiumOnly = false
+    })
+    
+    local CreditsTab = Window:MakeTab({
+        Name = "Creditos",
+        Icon = "rbxassetid://7743876142",
+        PremiumOnly = false
+    })
+    
+    local BookChams = {}
+    PlayerTab:AddButton({
+        Name = "Anti AFK",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Activando ANTI-AFK',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+        v:Disable()
+    end
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "CMD-X",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo CMD-X script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Audio Stealer",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Audio Stealer script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/ID-STEALER", true))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Infinity Yield",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Infinity Yield script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Spy",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Pues desactivarlo o activarlo con "/spy"',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SPY'))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Stealing Game",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'El juego se guarda en la carpeta del exploit "WorkSpace"',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            saveinstance()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Annonymous Name",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Esto puede congelarte la pantalla unos segundos!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/AN%C3%93NIMO'),true))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Stream Sniper",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Stream Sniper script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Server Svip",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Server Svip script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/SERVER-SVIP"))()
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Owl Hub",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Owl Hub script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+          end 
+    })
+    
+    local BookChams = {}
+    ScriptsTab:AddButton({
+        Name = "Back Door",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Abriendo Back Door script!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/BACK-DOOR"))();
+          end 
+    })
+    
+    local BookChams = {}
+    PlayerTab:AddButton({
+        Name = "Serpiente [R6]",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Es recomendable usar avatar R6!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
+          end 
+    })
+    
+    PlayerTab:AddButton({
+        Name = "Invisible",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Pulse la tecla "B" para ACTIVAR/DESACTIVAR!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/SCRIPTS/main/INVISIBLE'),true))()
+          end 
+    })
+    
+    local BookChams = {}
+    GameTab:AddButton({
+        Name = "Build a Boat",
+        Callback = function()
+            OrionLib:MakeNotification({
+                Name = "Ejecutando... ⚠️",
+                Content = 'Cargando script de juego!',
+                Image = "rbxassetid://7733666258",
+                Time = 5
+                })
+            wait(5)
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Crimson-gith/BuildABoat/main/Build%20A%20Boat'), true))()
+          end 
+    })
+    
+    CreditsTab:AddParagraph("LIBRARY - V5","Desarrollado Por CodyPlay32")
+
+end
+
+function CorrectKeyNotification()
+     OrionLib:MakeNotification({
+        Name = "Notificación",
+        Content = "Contraseña correcta, cargando menú!  ✅",
+        Image = "rbxassetid://7733666258",
+        Time = 5
+        })
+    end
+    
+function IncorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Notificación",
+        Content = "Contraseña incorrecta, lo siento!  ❌",
+        Image = "rbxassetid://7733666258",
+        Time = 5
+        })
+    end
+    
+    local Key = Window:MakeTab({
+        Name = "Clave",
+        Icon = "rbxassetid://7733965118",
+        PremiumOnly = false
+    })
+
+    local CreditsKey = Window:MakeTab({
+        Name = "Creditos",
+        Icon = "rbxassetid://7743876142",
+        PremiumOnly = false
+    })
+    
+    Key:AddTextbox({
+        Name = "Introduzca clave",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(Value)
+            if Value and Value ~= "" then
+            if Value == _G.Key then
+              CorrectKeyNotification()
+              wait(6)
+              MakeScriptHub()
+          else
+              IncorrectKeyNotification()
+          end
+       end
+    end
+  })
+
+  CreditsKey:AddParagraph("LIBRARY - V5","Desarrollado Por CodyPlay32")
+    
+
+OrionLib:Init()
