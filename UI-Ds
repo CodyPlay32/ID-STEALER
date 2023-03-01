@@ -2,12 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/Cod
 
 local win = DiscordLib:Window("discord library")
 
-win:Password("Enter password", function(password)
-  if password == "1234" then
-  else
-    DiscordLib:Notification("Error", "Incorrect password", "Close")
-  end
-end)
+local serv = win:Server("Preview", "")
 
 local btns = serv:Channel("Buttons")
 
