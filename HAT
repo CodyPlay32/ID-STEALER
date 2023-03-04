@@ -19,7 +19,7 @@ local b = b:Tab("Headless / Korblox")
 local _ = b:Section("Headless")
 local b = b:Section("Korblox")
 v:Button(
-    "AK-47",
+    "CR-L 4",
     function()
         function l(a, _)
             local b = Instance.new("Weld")
