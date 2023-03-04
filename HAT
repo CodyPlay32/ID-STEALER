@@ -77,6 +77,65 @@ v:Button(
         k(game.Players.LocalPlayer.Character, _)
     end
 )
+v:Button(
+    "Cyberpunk Sniper",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(_, b, a, d, e, c)
+            local f = Instance.new("Weld")
+            f.Name = _
+            f.Part0 = a
+            f.Part1 = d
+            f.C0 = e
+            f.C1 = c
+            f.Parent = b
+            return f
+        end
+        local function c(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = c(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, d)
+            d.Parent = _
+            local e = d:FindFirstChild("Handle")
+            if e then
+                local a = e:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = c(_, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = _:FindFirstChild("Head")
+                    if c then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = d.AttachmentPoint
+                        b("HeadWeld", c, c, e, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 5063578607
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
 h:Button(
     "Valiant Valkyrie of Testing",
     function()
