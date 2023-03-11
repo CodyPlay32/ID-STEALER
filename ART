@@ -9,7 +9,7 @@ local player = {};
                    Content = text,
                    Time = 3
               })
-	end;
+	end)
 
 local http = game:GetService("HttpService");
 
