@@ -1,5 +1,5 @@
 if (getgenv().library == nil) then
-	getgenv().library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))();
+	getgenv().library = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))();
 end;
 
 local player = {};
@@ -8,11 +8,12 @@ local player = {};
 	player.grid = (player.self).PlayerGui.MainGui.PaintFrame.GridHolder.Grid;
 
 	player.notify = function(title, text)
-		getgenv().library:MakeNotification({
-			Name = title,
-			Content = text,
-			Time = 3
-		});
+		getgenv().library:Notify({
+			Title = title,
+                        Content = text,
+                        Duration = 3,
+                        Image = 7733666258,
+                 });
 	end;
 
 local http = game:GetService("HttpService");
