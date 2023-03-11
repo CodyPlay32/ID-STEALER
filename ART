@@ -1,19 +1,15 @@
-if (getgenv().library == nil) then
-	getgenv().library = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))();
-end;
-
 local player = {};
 
 	player.self = game.Players.LocalPlayer;
 	player.grid = (player.self).PlayerGui.MainGui.PaintFrame.GridHolder.Grid;
 
 	player.notify = function(title, text)
-		getgenv().library:Notify({
-			Title = title,
-                        Content = text,
-                        Duration = 3,
-                        Image = 7733666258
-                 })
+		OrionLib:MakeNotification({
+        Name = title,
+        Content = text,
+        Image = "rbxassetid://7733666258",
+        Time = 5
+    });
 	end;
 
 local http = game:GetService("HttpService");
