@@ -1,18 +1,11 @@
-if (getgenv().library == nil) then
-	getgenv().library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))();
-end;
-
 local player = {};
 
 	player.self = game.Players.LocalPlayer;
 	player.grid = (player.self).PlayerGui.MainGui.PaintFrame.GridHolder.Grid;
 
 	player.notify = function(title, text)
-		getgenv().library:MakeNotification({
-			Name = title,
-			Content = text,
-			Time = 3
-		});
+		
+		print(title, text)
 	end;
 
 local http = game:GetService("HttpService");
