@@ -3,13 +3,7 @@ local player = {};
 	player.self = game.Players.LocalPlayer;
 	player.grid = (player.self).PlayerGui.MainGui.PaintFrame.GridHolder.Grid;
 
-	player.notify = function(title, text)
-		OrionLib:MakeNotification({
-                   Name = title,
-                   Content = text,
-                   Time = 3
-              })
-	end)
+end;
 
 local http = game:GetService("HttpService");
 
@@ -22,7 +16,15 @@ function json(url, port)
         result = http:JSONDecode(game:HttpGet("http://localhost:".. port .."/get?url="..url));
     end);
 
-    if not success then player.notify("Error", "Got error: ".. err); return; end;
+    if not success then
+    
+    OrionLib:MakeNotification({
+                   Name = "Error",
+                   Content = "Got error: ".. err,
+                   Time = 3
+              })
+    
+    return; end;
 
     return result;
 
@@ -75,7 +77,14 @@ local lib = {};
 		if (n == nil) then n = true; end;
 
 		s = string.lower(s);
-		if (s ~= "random") and (s ~= "rows") and (s ~= "reverserows") then s = "random"; player.notify("Notice", "Valid style options are:\n - \"random\"\n - \"rows\"\n - \"reverserows\""); end;
+		if (s ~= "random") and (s ~= "rows") and (s ~= "reverserows") then s = "random"; 
+		
+		OrionLib:MakeNotification({
+                   Name = "Notice",
+                   Content = "Valid style options are:\n - \"random\"\n - \"rows\"\n - \"reverserows\"",
+                   Time = 3
+              })
+		end;
 
 		local target = {};
 
@@ -84,9 +93,21 @@ local lib = {};
 
 		local start = os.time();
 		if n then
-			player.notify("Start", "Started at ".. os.date("%b. %d, %H:%M", start) .. ", approx. time: ".. math.round((1024/(1/t)) + os.time()-start) .."s");
-			task.wait();
-			player.notify("Start", "If it did not start painting for you, check F9");
+		
+		OrionLib:MakeNotification({
+                   Name = "Start",
+                   Content = "Started at ".. os.date("%b. %d, %H:%M", start) .. ", approx. time: ".. math.round((1024/(1/t)) + os.time()-start) .."s",
+                   Time = 3
+              })
+	      
+		task.wait();
+			
+		OrionLib:MakeNotification({
+                   Name = "Start",
+                   Content = "If it did not start painting for you, check F9",
+                   Time = 3
+              })
+	      
 		end;
 
 		local order = arrange(s);
