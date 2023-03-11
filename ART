@@ -116,7 +116,6 @@ local lib = {};
 	
 		if n then
 			player.notify("Start", "Started at ".. os.date("%b. %d, %H:%M", start) .. ", approx. time: ".. math.round((1024/(1/t)) + os.time()-start) .."s");
-			player.notify("Start", "If it did not start painting for you, check F9", Color3.fromRGB(255, 100, 100));
 		end;
 
 		local pixels = lib:getImage(i, port);
