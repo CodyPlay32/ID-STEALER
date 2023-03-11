@@ -12,7 +12,7 @@ local player = {};
 			Title = title,
                         Content = text,
                         Duration = 3,
-                        Image = 7733666258,
+                        Image = 7733666258
                  });
 	end;
 
