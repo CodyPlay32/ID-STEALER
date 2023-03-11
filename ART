@@ -5,7 +5,7 @@ local player = {};
 
 	player.notify = function(title, text)
 		
-		print(title, text)
+		warn(title, text)
 	end;
 
 local http = game:GetService("HttpService");
