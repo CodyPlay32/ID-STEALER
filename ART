@@ -5,11 +5,11 @@ local player = {};
 
 	player.notify = function(title, text)
 		OrionLib:MakeNotification({
-        Name = title,
-        Content = text,
-        Image = "rbxassetid://7733666258",
-        Time = 5
-    });
+                   Name = title,
+                   Content = text,
+                   Image = "rbxassetid://7733666258",
+                   Time = 3
+              });
 	end;
 
 local http = game:GetService("HttpService");
