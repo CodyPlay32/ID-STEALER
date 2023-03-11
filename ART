@@ -82,8 +82,6 @@ local lib = {};
 		local start = os.time();
 		if n then
 			player.notify("Start", "Started at ".. os.date("%b. %d, %H:%M", start) .. ", approx. time: ".. math.round((1024/(1/t)) + os.time()-start) .."s");
-			task.wait();
-			player.notify("Start", "If it did not start painting for you, check F9");
 		end;
 
 		local order = arrange(s);
