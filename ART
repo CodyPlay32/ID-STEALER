@@ -1,5 +1,3 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
-
 local player = {};
 
 	player.self = game.Players.LocalPlayer;
@@ -10,7 +8,7 @@ local player = {};
                    Name = title,
                    Content = text,
                    Time = 3
-              });
+              })
 	end;
 
 local http = game:GetService("HttpService");
