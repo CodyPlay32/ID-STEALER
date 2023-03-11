@@ -1,3 +1,5 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/V5')))()
+
 local player = {};
 
 	player.self = game.Players.LocalPlayer;
@@ -7,7 +9,6 @@ local player = {};
 		OrionLib:MakeNotification({
                    Name = title,
                    Content = text,
-                   Image = "rbxassetid://7733666258",
                    Time = 3
               });
 	end;
